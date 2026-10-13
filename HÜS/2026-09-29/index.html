@@ -1,52 +1,69 @@
 <!DOCTYPE html>
 <html lang="de">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Über mich</title>
-  </head>
-  <body>
-    <h1>GILL Kaurav</h1>
-
-    
-
-    <h2>Persönliche Daten</h2>
-    <p>
-      Geburtsdatum: 08.09.2004<br />
-      Nationalität: India
-    </p>
-
-    <h2>Berufserfahrung</h2>
-    <p>
-      <strong>Buchhalter</strong><br />
-      Banoz consulting<br />
-    </p>
-    
-
-   
-
-    <h2>Ausbildung</h2>
-    <p>
-      <strong>HTL Spengergasse</strong><br />
-      2025 - 2026
-    </p>
-
-    <h2>Fähigkeiten</h2>
-    <ul>
-      <li>Gute Kommunikationsfähigkeit</li>
-      <li>Verlässlichkeit und Teamarbeit</li>
-      <li>Grundkenntnisse in MS Office</li>
-      <li>Gute Deutschkenntnisse</li>
-    </ul>
-
-    <h2>Was wir jetzt in der Schule machen</h2>
-    <img src="/Users/kaurav/code projekt/WMC/HÜS/2026-09-29/images/Bildschirmfoto 2026-10-06 um 15.00.29.png" width="400" height="300" alt="Bildschirmfoto 2026-10-06 um 15.00.29" />
-
-    <h2>Interessen</h2>
-    <ul>
-      <li>Sport</li>
-      <li>Lesen</li>
-      <li>Technik und neue Entwicklungen</li>
-    </ul>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Über mich – Kaurav Gill</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="seitenkopf">
+        <p class="untertitel">WMC · 3AAIF · HTL Spengergasse</p>
+        <h1>Über mich</h1>
+        <p>Kaurav Gill</p>
+        <nav aria-label="Seitennavigation">
+            <a href="#profil">Mein Profil</a>
+            <a href="#hobby">Mein Hobby</a>
+            <a href="#schulprojekt">Schulprojekt</a>
+        </nav>
+    </header>
+    <main>
+        <article id="profil" class="karte">
+            <h2>Hallo, ich bin Kaurav</h2>
+            <p>Ich heiße Kaurav Gill und besuche die HTL Spengergasse.</p>
+            <p>Ich habe als Buchhalter bei Banoz Consulting gearbeitet.</p>
+            <p>Ich interessiere mich für Technik und neue Entwicklungen.</p>
+            <h3>Persönliche Daten</h3>
+            <dl>
+                <dt>Geburtsdatum</dt>
+                <dd><time datetime="2004-09-08">08.09.2004</time></dd>
+                <dt>Nationalität</dt>
+                <dd>Indisch</dd>
+            </dl>
+            <h3>Berufserfahrung</h3>
+            <p><strong>Buchhalter</strong><br>Banoz Consulting</p>
+            <h3>Ausbildung</h3>
+            <p><strong>HTL Spengergasse</strong><br>2025–2026</p>
+            <h3>Fähigkeiten</h3>
+            <ul>
+                <li>Gute Kommunikationsfähigkeit</li>
+                <li>Verlässlichkeit und Teamarbeit</li>
+                <li>Grundkenntnisse in MS Office</li>
+                <li>Gute Deutschkenntnisse</li>
+            </ul>
+        </article>
+        <aside id="hobby" class="karte">
+            <h2>Mein Hobby</h2>
+            <p>Sport gehört zu meinen Interessen.</p>
+            <h3>Weitere Interessen</h3>
+            <ul>
+                <li>Lesen</li>
+                <li>Technik und neue Entwicklungen</li>
+            </ul>
+        </aside>
+        <section id="schulprojekt" class="karte">
+            <h2>Was wir in der Schule machen</h2>
+            <p>Ein Einblick in ein Programmierprojekt:</p>
+            <figure>
+                <img src="images/schulprojekt.png" width="1464" height="1084"
+                    alt="Python-Code, der benachbarte Zeichenpaare zählt und das häufigste Paar zusammenfasst.">
+                <figcaption>Ein Python-Beispiel zum Zusammenfassen von Zeichenpaaren.</figcaption>
+            </figure>
+        </section>
+    </main>
+    <footer>
+        <p>© 2026 Kaurav Gill · WMC-Hausübung</p>
+        <a href="#profil">Zurück zum Profil</a>
+    </footer>
+</body>
 </html>

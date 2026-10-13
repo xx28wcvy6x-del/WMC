@@ -1,0 +1,135 @@
+/* CSS-Basics: externes Stylesheet, Klassen, Box-Model und rem-Abstände. */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f2f4f8;
+    color: #243247;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.seitenkopf,
+main,
+footer {
+    width: 100%;
+    max-width: 52rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+}
+
+.seitenkopf {
+    padding-top: 2.5rem;
+}
+
+.untertitel {
+    color: #4d5970;
+    font-size: 0.875rem;
+}
+
+h1 {
+    margin: 0.5rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: rgba(109, 40, 217, 0.15);
+    color: #472080;
+    font-size: 2.5rem;
+    line-height: 1.2;
+}
+
+h2,
+h3 {
+    line-height: 1.3;
+}
+
+h2 {
+    margin-top: 0;
+    color: #472080;
+}
+
+h3 {
+    margin-top: 1.5rem;
+}
+
+nav a,
+footer a {
+    display: inline-block;
+    padding: 0.75rem;
+}
+
+a {
+    color: #472080;
+    text-underline-offset: 0.2rem;
+}
+
+a:hover {
+    color: #243247;
+}
+
+a:focus-visible {
+    outline: 3px solid #6d28d9;
+    outline-offset: 3px;
+}
+
+.karte {
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid #d4dbe6;
+    border-radius: 0.5rem;
+    background-color: #ffffff;
+}
+
+dt {
+    font-weight: bold;
+}
+
+dd {
+    margin-left: 0;
+    margin-bottom: 0.75rem;
+}
+
+ul {
+    padding-left: 1.5rem;
+}
+
+figure {
+    margin: 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 0.25rem;
+}
+
+figcaption,
+footer {
+    color: #4d5970;
+    font-size: 0.875rem;
+}
+
+figcaption {
+    margin-top: 0.75rem;
+}
+
+@media screen and (max-width: 600px) {
+    .seitenkopf,
+    main,
+    footer {
+        padding: 1rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .karte {
+        padding: 1rem;
+    }
+}
